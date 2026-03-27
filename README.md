@@ -1,6 +1,6 @@
 # ICML26_rebuttlal
 
-### Table X: Industrial Policy Grounding for MCCU Risk Categories
+### Table 1: Industrial Policy Grounding for MCCU Risk Categories
 
 | Risk Category | Implicit Harmfulness & Weaponization Context | Real-world Platform Policy Alignment |
 | :--- | :--- | :--- |
