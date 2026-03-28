@@ -21,10 +21,16 @@
 
 | Model | MDR | SCR | Conditional Ratio $P(f_{unsafe} \| f_{align})$ ↓ |
 | :--- | :---: | :---: | :---: |
-| SD-v1.4 | - | - | - |
-| SD-v2.1 | - | - | - |
-| SDXL    | - | - | - |
-| FLUX.1  | - | - | $\approx 1.0$ |
+| SD-v1.4 | 40.91 | 89.21 | - |
+| SD-v1.5 | 41.00 | 89.55 | - |
+| SD-v2.1| 29.54 | 93.36 | - |
+| SDXL    | 16.64 | 95.86 | - |
+| Playg-v2.5  | 10.29 | 97.10 | - |
+| PixArt-α     | 11.34 | 98.14 | - |
+| SD-v3.5    | 3.45 | 98.05 | - |
+| FLUX.1    | 0.48 | 99.56 | - |
+| CogView4    | 3.28 | 98.38 | - |
+| Janus-Pro    | 19.01 | 90.90 | - |
 
 ### Table 3: Qualitative Results of VLM
 | Image  | Description |
@@ -36,23 +42,25 @@
 ### Table 4: Relationship Between Instruction Compliance Capabilities and Security Changes. 
 *(Higher instruction compliance consistently leads to a significant drop in defense rates against MCCU.)*
 
-| Model Architecture | Model | SCR ↑ | MDR ↑ | FID↓ | Clip ↑ |
-| :--- | :--- | :---: | :---: | :---: |
-| **UNet** | SD-v1.4 | 89.21 | 40.91 |
-| **UNet** | SDXL | 95.86 | 16.64 |
-| **Transformer** | SD-v3.5 | 98.05 | 3.45 |
-| **Transformer** | FLUX.1 | 99.56 | 0.48 |
+| Model | SCR ↑ | MDR ↑ | FID ↓ | Clip ↑ |
+| :--- | :---: | :---: | :---: |
+| SD-v1.4 | 89.21 | 40.91 |   |   |
+| SD-v1.4 step = 5000 |   |   |   |   |
+| SD-v1.4 step = 10000  |   |   |   |   |
+| SDXL | 95.86 | 16.64 |  |   |  
+| SDXL  step = 5000  |   |   |   |   |
+| SDXL  step = 10000 |   |   |   |   |
+
 
 <br>
 
 ### Table 5: Test Results of the SOTA Baseline for Mass Concept Erasure on TwoHamsters. 
-*(Erasing atomic concepts fails to effectively mitigate compositional risks and severely damages benign concept retention.)*
 
-| Base Model | Method | Target Concept | Defense Rate (MDR) ↑ | Utility (SCR) ↑ |
-| :--- | :--- | :--- | :---: | :---: |
-| **SD-v1.4** | Clean (Baseline) | - | 40.91 | 89.21 |
-| **SD-v1.4** | ESD | Atomic | - | - |
-| **SD-v1.4** | UCE | Atomic | - | - |
+| Method |MDR ↑ |  SCR ↑ | FID ↓ | Clip ↑ |
+| :--- | :---: | :---: |
+| SD XL | 40.91 | 89.21 |
+| MACE  | - | - |
+| HiRM  | - | - |
 
 <br>
 
@@ -60,18 +68,34 @@
 
 | Model / Defense Setup | FID ↓ | CLIP Score ↑ |
 | :--- | :---: | :---: |
-| Clean Baseline (e.g., SD-v1.4) | - | - |
-| ESD (Erased Model) | - | - |
-| UCE (Erased Model) | - | - |
+| SD-v1.4 |   |  |
+| SD-v1.5 |  |  |
+| SD-v2.1|   |  |
+| SDXL    |   |  |
+| Playg-v2.5  |   |  |
+| PixArt-α     |  |  |
+| SD-v3.5    |  |  |
+| FLUX.1    |  |  |
+| CogView4 |   |  |
+| Janus-Pro |   |  |
+| NP |   |  |
+| SP |  |  |
+| ESD|   |  |
+| UCE |   |  |
+|RECE|   |  |
+| Slider |  |  |
+| KSCU  |  |  |
+| COGFD |  |  |
+
 
 <br>
 
 ### Table 7: Baseline Testing of the “Ensemble Detector”. 
 
-| Detector Setup | Dist ↑ | Hara ↑ | Hate ↑ | Humi ↑ | Ille ↑ | Poli ↑ | Heal ↑ | Harm ↑ | Sexu ↑ | Viol ↑ | Recall ↑ | FPR (Benign) ↓ |
+| Detector Setup | Dist ↑ | Hara ↑ | Hate ↑ | Humi ↑ | Ille ↑ | Poli ↑ | Heal ↑ | Harm ↑ | Sexu ↑ | Viol ↑ | Recall ↑ | 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Q16** | 64.29 | 16.67 | 47.08 | 31.76 | 58.42 | 61.90 | 36.36 | 88.03 | 8.44 | 92.23 | 52.69 | - |
-| **LLaVA-Guard** | 35.71 | 16.67 | 28.40 | 42.35 | 49.82 | 19.05 | 9.09 | 76.07 | 9.74 | 75.73 | 41.06 | - |
-| **NSFW-T** | 75.00 | 93.33 | 98.05 | 77.65 | 73.84 | 100.0 | 100.0 | 64.96 | 76.62 | 88.35 | 81.52 | - |
+| **Q16** | 64.29 | 16.67 | 47.08 | 31.76 | 58.42 | 61.90 | 36.36 | 88.03 | 8.44 | 92.23 | 52.69 |
+| **LLaVA-Guard** | 35.71 | 16.67 | 28.40 | 42.35 | 49.82 | 19.05 | 9.09 | 76.07 | 9.74 | 75.73 | 41.06 | 
+| **NSFW-T** | 75.00 | 93.33 | 98.05 | 77.65 | 73.84 | 100.0 | 100.0 | 64.96 | 76.62 | 88.35 | 81.52 | 
 | **Ensemble (Q16 $\cup$ LLaVA)** | - | - | - | - | - | - | - | - | - | - | - | **High** |
 | **Ensemble (All Combined)** | - | - | - | - | - | - | - | - | - | - | **Highest** | **Surged** |
