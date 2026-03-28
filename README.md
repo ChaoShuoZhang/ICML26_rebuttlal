@@ -42,14 +42,14 @@
 ### Table 4: Relationship Between Instruction Compliance Capabilities and Security Changes. 
 *(Higher instruction compliance consistently leads to a significant drop in defense rates against MCCU.)*
 
-| Model | SCR ↑ | MDR ↑ | FID ↓ | Clip ↑ |
-| :--- | :---: | :---: | :---: | :---: |
-| SD-v1.4 | 89.21 | 40.91 |   |   |
-| SD-v1.4 step = 5000 |   |   |   |   |
-| SD-v1.4 step = 10000  |   |   |   |   |
-| SDXL | 95.86 | 16.64 |  |   |  
-| SDXL  step = 5000  |   |   |   |   |
-| SDXL  step = 10000 |   |   |   |   |
+| Model | SCR ↑ | MDR ↑ | Clip ↑ |
+| :--- | :---: | :---:  | :---: |
+| SD-v1.4 | 89.21 | 40.91  |   |
+| SD-v1.4 step = 5000 |    |   |   |
+| SD-v1.4 step = 10000  |      |   |   
+| SDXL | 95.86 | 16.64 |  |    
+| SDXL  step = 5000  |    |   |   
+| SDXL  step = 10000 |    |   |   
 
 
 <br>
