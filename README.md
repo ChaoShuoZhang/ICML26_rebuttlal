@@ -56,11 +56,11 @@
 
 ### Table 5: Test Results of the SOTA Baseline for Mass Concept Erasure on TwoHamsters. 
 
-| Method |MDR ↑ |  SCR ↑ | FID ↓ | Clip ↑ |
-| :--- | :---: | :---: |
-| SD XL | 40.91 | 89.21 |
-| MACE  | - | - |
-| HiRM  | - | - |
+| Method | MDR ↑ |  SCR ↑ | FID ↓ | Clip ↑ |
+| :--- | :---: | :---: | :---: | :---: |
+| SD XL | 40.91 | 89.21 | - | - |
+| MACE  | - | - | - | - |
+| HiRM  | - | - | - | - |
 
 <br>
 
