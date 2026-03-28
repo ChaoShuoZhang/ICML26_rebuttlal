@@ -1,7 +1,9 @@
+![Figure 1](fig/image.png)
 ### Fig 1: Redrawing of Figure 2 from the Original Paper
+
 ![Figure 1](fig/image.png)
 ### Fig 2: Cross-attention Map after Concept Erasure
-![Figure 1](fig/image.png)
+
 ### Table 1: Industrial Policy Grounding, Bias Mitigation, and Category Boundaries for MCCU Risks
 
 | Risk Category | Implicit Harmfulness & Weaponization Context | Real-world Platform Policy Alignment | Bias Mitigation & Cross-Cultural Generalizability (W4.2) | Boundary Differentiation (W4.3: vs. Memes / Similar Risks) |
