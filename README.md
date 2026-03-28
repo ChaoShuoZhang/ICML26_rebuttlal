@@ -18,6 +18,7 @@
 | **8. PublicHealthHarm** | Visualizing unsanitary environments or dangerous home remedies to create panic or stigmatize patients. | **[Google/OpenAI Policies](https://policies.google.com/terms/generative-ai/use-policy?hl=en):** Prohibits harmful health/medical claims or material promoting disease. | Strictly aligned with global epidemiological consensus to ensure traditional, indigenous, or regional alternative medicinal practices are not misclassified as malicious harm. | **vs. Disturbing:** Focuses specifically on the spread of disease or unsanitary conditions that threaten community health, not just visually gross content. |
 | **9. Political** | Generating deepfake satirical images of public figures, weaponized at scale for disinformation and smearing. | **[Midjourney/OpenAI Policies](https://docs.midjourney.com/docs/terms-of-service):** Limits use for political campaigning, lobbying, or interfering with real-world events. | Captures the universal threat of AI weaponization in opinion manipulation, deliberately including deepfakes targeting political figures across the Global South and diverse geopolitical contexts. | **vs. Satire:** "Political" risks cross into deepfake disinformation or institutional manipulation. "Satire" (Memes) is protected free speech if it doesn't deceive the public. |
 | **10. Harassment** | Visual cyberbullying targeting specific individuals, placing them in degrading scenarios for social degradation. | **[OpenAI/Meta Policies](https://openai.com/policies/usage-policies):** Explicitly prohibits bullying, intimidation, or targeted harassment of an individual. | Defines harassment through the lens of systematic psychological harm and targeted degradation, which are recognized globally as malicious intents, regardless of local social shaming norms. | **vs. Hate & Satire:** "Harassment" targets *specific private individuals* (punching down). "Satire" targets public figures/systems (punching up). "Hate" targets demographics. |
+
 ### Table 2: Proportion of Unsafely Generated Subsets Within Successfully Aligned Subsets. 
 *(Models with stronger generative capabilities exhibit a conditional unsafe ratio approaching 100%, highlighting the inherent alignment-safety trade-off.)*
 
@@ -103,7 +104,7 @@
 | **SD Filter** | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | **Perspective** | 29.46 | 0.00 | 16.73 | 21.18 | 19.35 | 42.86 | 9.09 | 47.86 | 1.95 | 0.00 | 18.56 |
 | **LLaVA-Guard** | 35.71 | 16.67 | 28.40 | 42.35 | 49.82 | 19.05 | 9.09 | 76.07 | 9.74 | 75.73 | 41.06 |
-| **Ensemble (Clip-base and VLM-base Combined,Q16 and LLaVA-Guard)** | - | - | - | - | - | - | - | - | - | - | **High** |
-| **Ensemble (Clip-base Combined)** | - | - | - | - | - | - | - | - | - | - | **High** |
-| **Ensemble (VLM-base Combined)** | - | - | - | - | - | - | - | - | - | - | **High** |
-| **Ensemble (All Combined)** | - | - | - | - | - | - | - | - | - | - | **Highest** |
+| **Ensemble (Clip-base and VLM-base Combined,Q16 and LLaVA-Guard)** | 69.64 | 20.0 | 54.47 | 50.59 | 75.99 | 71.43 | 36.36 | 89.74 | 15.58 | 94.17 | 61.93 |
+| **Ensemble (Clip-base Combined)** | 91.07 | 93.33 | 98.44 | 84.71 | 88.53 | 100.0 | 100.0 | 94.02 | 81.17 | 97.09 | 91.45 |
+| **Ensemble (VLM-base Combined)** | 49.11 | 16.67 | 37.74 | 47.06 | 61.65 | 57.14 | 18.18 | 78.63 | 10.39 | 75.73 | 48.67 |
+| **Ensemble (All Combined)** | 91.07 | 93.33 | 99.22 | 90.59 | 90.68 | 100.0 | 100.0 | 95.73 | 81.17 | 97.09 | 92.73 |
