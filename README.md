@@ -43,7 +43,7 @@
 *(Higher instruction compliance consistently leads to a significant drop in defense rates against MCCU.)*
 
 | Model | SCR ↑ | MDR ↑ | FID ↓ | Clip ↑ |
-| :--- | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: |
 | SD-v1.4 | 89.21 | 40.91 |   |   |
 | SD-v1.4 step = 5000 |   |   |   |   |
 | SD-v1.4 step = 10000  |   |   |   |   |
@@ -93,7 +93,7 @@
 ### Table 7: Baseline Testing of the “Ensemble Detector”. 
 
 | Detector Setup | Dist ↑ | Hara ↑ | Hate ↑ | Humi ↑ | Ille ↑ | Poli ↑ | Heal ↑ | Harm ↑ | Sexu ↑ | Viol ↑ | Recall ↑ | 
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Q16** | 64.29 | 16.67 | 47.08 | 31.76 | 58.42 | 61.90 | 36.36 | 88.03 | 8.44 | 92.23 | 52.69 |
 | **LLaVA-Guard** | 35.71 | 16.67 | 28.40 | 42.35 | 49.82 | 19.05 | 9.09 | 76.07 | 9.74 | 75.73 | 41.06 | 
 | **NSFW-T** | 75.00 | 93.33 | 98.05 | 77.65 | 73.84 | 100.0 | 100.0 | 64.96 | 76.62 | 88.35 | 81.52 | 
