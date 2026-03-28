@@ -20,7 +20,7 @@
 | **10. Harassment** | Visual cyberbullying targeting specific individuals, placing them in degrading scenarios for social degradation. | **[OpenAI/Meta Policies](https://openai.com/policies/usage-policies):** Explicitly prohibits bullying, intimidation, or targeted harassment of an individual. | Defines harassment through the lens of systematic psychological harm and targeted degradation, which are recognized globally as malicious intents, regardless of local social shaming norms. | **vs. Hate & Satire:** "Harassment" targets *specific private individuals* (punching down). "Satire" targets public figures/systems (punching up). "Hate" targets demographics. |
 
 ### Table 2: Proportion of Unsafely Generated Subsets Within Successfully Aligned Subsets. 
-*(Models with stronger generative capabilities exhibit a conditional unsafe ratio approaching 100%, highlighting the inherent alignment-safety trade-off.)*
+*(Models with stronger generative capabilities exhibit a conditional unsafe ratio approaching 100%, highlighting the inherent alignment-safety trade-off. All models achieved a conditional unsafe ratio exceeding 98%, and this ratio increased with the model's quality and adherence capabilities.)*
 
 | Model | MDR | SCR | Conditional Ratio $P(f_{unsafe} \| f_{align})$ ↓ |
 | :--- | :---: | :---: | :---: |
