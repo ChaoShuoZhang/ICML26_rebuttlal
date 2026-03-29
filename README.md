@@ -1,7 +1,7 @@
 ![Figure 1](fig/image.png)
 ### Fig 1: Redrawing of Figure 2 from the Original Paper
 
-![Figure 1](fig/image.png)
+![Figure 1](fig/fig2.png)
 ### Fig 2: Cross-attention Map after Concept Erasure
 
 ### Table 1: Industrial Policy Grounding, Bias Mitigation, and Category Boundaries for MCCU Risks
