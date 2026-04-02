@@ -4,6 +4,13 @@
 ![Figure 1](fig/fig1.png)
 ### Fig B: Cross-attention Map after Concept Erasure
 
+![Figure 1](fig/ROC_PR_Curves_Balanced.png)
+### Fig C: AUC-ROC and precision-recall curve of MCCU-ViT on Twohamsters.
+
+![Figure 1](fig/ROC_PR_Curves_Balanced_2.png)
+### Fig D: AUC-ROC and precision-recall curve of MCCU-ViT on HarmfulCmb.
+
+
 ### Table A: Industrial Policy Grounding, Bias Mitigation, and Category Boundaries for MCCU Risks
 
 | Risk Category | Implicit Harmfulness & Weaponization Context | Real-world Platform Policy Alignment | Bias Mitigation & Cross-Cultural Generalizability (W4.2) | Boundary Differentiation (W4.3: vs. Memes / Similar Risks) |
